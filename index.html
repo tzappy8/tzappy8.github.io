@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trey Zaffiro</title>
+<meta name="description" content="Trey Zaffiro — Economics major at Lafayette College, Division I pitcher, and builder of data projects in finance and prediction markets.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf8; --surface:#ffffff; --ink:#1a1a1f; --muted:#5d5d66; --line:#e6e3de;
+  --accent:#910029; --accent-soft:#f6e9ec; --navy:#14213d;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#121216; --surface:#1b1b21; --ink:#ecebe8; --muted:#a3a2ab; --line:#2c2c34;
+    --accent:#e0566f; --accent-soft:#2a1a1f; --navy:#c9d3ea;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#121216; --surface:#1b1b21; --ink:#ecebe8; --muted:#a3a2ab; --line:#2c2c34;
+  --accent:#e0566f; --accent-soft:#2a1a1f; --navy:#c9d3ea;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:56px}
+nav .name{font-weight:700;color:var(--ink)}
+nav ul{display:flex;gap:20px;list-style:none;font-size:14px}
+nav ul a{color:var(--muted)}
+nav ul a:hover{color:var(--ink);text-decoration:none}
+header{padding:88px 0 56px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-family:"Source Serif 4",Georgia,serif;font-size:clamp(40px,7vw,60px);line-height:1.05;margin:12px 0 18px;color:var(--navy)}
+.lede{font-size:19px;color:var(--muted);max-width:640px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--ink);background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{text-decoration:none;opacity:.9}
+section{padding:48px 0;border-top:1px solid var(--line)}
+h2{font-family:"Source Serif 4",Georgia,serif;font-size:28px;color:var(--navy);margin-bottom:24px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px;margin-bottom:16px}
+.card h3{font-size:18px;margin-bottom:4px}
+.meta{font-size:14px;color:var(--muted);margin-bottom:12px}
+.card ul{padding-left:20px;color:var(--ink)}
+.card li{margin-bottom:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tag{font-size:12.5px;font-weight:500;padding:3px 10px;border-radius:999px;background:var(--accent-soft);color:var(--accent)}
+.feature{border-left:4px solid var(--accent)}
+.row{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.row .right{font-size:14px;color:var(--muted);white-space:nowrap}
+.timeline .item{padding:16px 0;border-bottom:1px solid var(--line)}
+.timeline .item:last-child{border-bottom:0}
+.timeline h3{font-size:17px}
+.timeline .role{color:var(--muted);font-size:15px}
+.timeline p{margin-top:6px;font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.grid .card{margin:0}
+.small{font-size:15px}
+footer{padding:40px 0 60px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+@media (max-width:600px){nav ul{gap:14px;font-size:13px} nav ul li.hide-sm{display:none} header{padding:56px 0 40px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="name" href="#top">Trey Zaffiro</a>
+<ul><li><a href="#projects">Projects</a></li><li><a href="#experience">Experience</a></li><li class="hide-sm"><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<main id="top">
+<header class="wrap">
+  <div class="eyebrow">Economics · Data Science · Finance</div>
+  <h1>Trey Zaffiro</h1>
+  <p class="lede">Economics major at Lafayette College and NCAA Division I pitcher. I build data projects that test how markets price information, and I'm pursuing a career in finance.</p>
+  <div class="cta">
+    <a class="btn primary" href="resume.pdf">Résumé (PDF)</a>
+    <a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a>
+    <a class="btn" href="https://github.com/tzappy8">GitHub</a>
+  </div>
+</header>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <div class="card feature">
+    <div class="row"><h3>Prediction Market Research: Netflix Top 10</h3><span class="right">Fall 2026 – Present</span></div>
+    <div class="meta">Independent research project</div>
+    <p class="small">Can a simple statistical model forecast Netflix's weekly #1 movie better than a real-money prediction market? I built one to find out, and track it against Kalshi prices every week.</p>
+    <ul class="small" style="margin-top:12px">
+      <li>Model trained on five years of Netflix US weekly Top 10 data (2021–2026) that estimates each movie's chance of finishing #1.</li>
+      <li>Automated daily data pipeline, built with AI coding tools (Claude Code), that collects Netflix lists, Kalshi prices every 15 minutes, and Wikipedia page views.</li>
+      <li>Weekly paper-trading scorecard (no real money) comparing model accuracy against the market, including trading fees.</li>
+      <li>Tested extra factors (reviews, box office, star power, online buzz) on held-out data and recorded which ones helped.</li>
+    </ul>
+    <div class="tags"><span class="tag">Python</span><span class="tag">pandas</span><span class="tag">Statistical modeling</span><span class="tag">Prediction markets</span><span class="tag">GitHub</span></div>
+    <p class="small" style="margin-top:14px"><a href="https://github.com/tzappy8/kalshi-netflix-data2">View the data repository →</a></p>
+  </div>
+  <div class="card">
+    <div class="row"><h3>Bank of America Global Markets Job Simulation</h3><span class="right">Nov 2026</span></div>
+    <div class="meta">Forage virtual experience</div>
+    <ul class="small">
+      <li>Analyzed sector, rate, and volatility data to write client market reports and advisory emails.</li>
+      <li>Recommended portfolio reallocations matched to each client's goals and risk tolerance.</li>
+      <li>Proposed automating a manual trade workflow to cut execution time from about 90 to under 30 minutes.</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+  <h2>Experience</h2>
+  <div class="timeline">
+    <div class="item"><div class="row"><h3>Flynn Zito Capital Management</h3><span class="right">Nov 2025 – Jan 2026</span></div>
+      <div class="role">Finance Intern · Garden City, NY</div>
+      <p>Researched ETFs and mutual funds and presented investment pitches; worked with the trading team on execution and portfolio management.</p></div>
+    <div class="item"><div class="row"><h3>Lafayette Investment Club</h3><span class="right">Sep 2026 – Present</span></div>
+      <div class="role">Member</div>
+      <p>Help manage a $1M+ equity portfolio and contribute to weekly market analysis and investment decisions.</p></div>
+    <div class="item"><div class="row"><h3>Lafayette College Mathematics Department</h3><span class="right">Aug 2026 – Present</span></div>
+      <div class="role">Math Tutor</div>
+      <p>Tutor student-athletes one-on-one in course material and problem solving.</p></div>
+    <div class="item"><div class="row"><h3>Data Analytics Global Career Accelerator</h3><span class="right">Jun – Aug 2026</span></div>
+      <div class="role">Program Participant</div>
+      <p>Completed a selective data analytics program in Excel and Tableau.</p></div>
+    <div class="item"><div class="row"><h3>Gateway Career Track Externship</h3><span class="right">Jan 2026</span></div>
+      <div class="role">Extern · Computer Science & Technology</div>
+      <p>Met professionals from Google, Google Cloud, Epic Systems, Uber, and Lutron.</p></div>
+    <div class="item"><div class="row"><h3>NCAA Division I Baseball, Lafayette College</h3><span class="right">Aug 2024 – Present</span></div>
+      <div class="role">Pitcher · Patriot League</div>
+      <p>30+ hours a week of training and competition alongside a full course load. Threw the 10th no-hitter in Hampton Collegiate Summer League history.</p></div>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <h2>Education &amp; Certifications</h2>
+  <div class="grid">
+    <div class="card"><h3>Lafayette College</h3><div class="meta">B.A. Economics · Expected May 2028</div>
+      <p class="small">Data Science minor (in progress)<br>Certificate in Financial Policy &amp; Analysis (in progress)<br>Dean's List, Fall 2024</p></div>
+    <div class="card"><h3>Certifications</h3><div class="meta">Completed &amp; in progress</div>
+      <p class="small">BofA Global Markets Sales &amp; Trading Simulation (Forage)<br>AI Fluency, Anthropic Academy<br>Bloomberg Market Concepts (in progress)<br>SIE Exam (expected 2027)</p></div>
+    <div class="card"><h3>Skills</h3><div class="meta">Tools</div>
+      <p class="small">Excel (pivot tables, XLOOKUP) · Tableau · Python (pandas) with AI-assisted coding · GitHub · Market research</p></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p>I'm looking for summer 2027 internships in asset management, fixed income, and markets. The best way to reach me is email.</p>
+  <div class="cta"><a class="btn primary" href="mailto:zaffirot@lafayette.edu">zaffirot@lafayette.edu</a><a class="btn" href="https://www.linkedin.com/in/YOUR-LINKEDIN">LinkedIn</a></div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Trey Zaffiro</div></footer>
+</body>
+</html>
